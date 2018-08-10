@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*******************************
+ * @Copyright:智讯科技
+ * @Creation date:2014.11.05
+ *******************************/
+ /*reset css*/
+*{margin:0;padding:0}
+body{overflow:hidden;overflow-y:auto;background:#fdf6ea;min-height: 100%;font-size:13px;font-family:arial;-webkit-text-size-adjust:none;line-height:1.62;color:#555;}
+html{ min-height: 100%;overflow:hidden;overflow-y:auto;}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol,li{list-style:none;}
+em{font-style:normal}
+img{border:none;}
+input,img{vertical-align:middle;}
+.fn-clear:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.fn-clear{*zoom:1;}
+a{color:#333;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:active{color:#555;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+section,aside,header,footer,hgroup,article{display:block}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+.input,.select{width:100%;height:24px;background:#fff;border:0 none;box-shadow: 0 1px 1px rgba(0,0,0,.1);border-radius:3px;text-indent:8px;padding:8px 0;font-size:14px;line-height: 24px;-webkit-appearance: none;}
+.select{height:40px;padding:0}
+.header{width:100%;position:relative;/*z-index:100;*/}
+.footer{width:100%;min-width:300px;margin-top:10px;padding:10px 0;color:#555;text-align:center;}
+.footer a{color:#555;margin:0 3px;}
+.red{color:red;}
+.space-10{width:100%;height:10px;}
+.space-20{width:100%;height:20px;}
+.space-30{width:100%;height:30px;}
+.space-50{width:100%;height:50px;}
+.space-100{width:100%;height:100px;}
+.jjr-main{width:100%;min-width:300px;}
+
+.bg-login{background:url(../images/login_bg.png) center no-repeat;background-size:100% 100%;text-align: center;}
+.bg-login .footer,.bg-login .footer a{color:#fff;}
+.logo-dkt{width:270px;height:91px;background:url(../images/reg.png) no-repeat;background-size: 270px;margin:30px auto 0;}
+.man-login{margin:40px 0 0;}
+.man-passwd{width:78%;height:30px;padding:6px 3%;background-color:#fff;border:0 none;}
+.man-submit{width:280px;height:42px;background-color:#33d93f;border:0 none;border-radius: 8px;font-size: 18px;color:#2874e7;letter-spacing: 10px;color: #fff;}
+.man-login>.tips{width:280px;margin:10px auto;color:red;line-height:32px;background-color:#fdedd3;}
+.man-dataitem{padding:20px 5%;}
+.man-dataitem li{position:relative;float: left;width:50%;text-align:center;padding:20px 0;color:#444;}
+.man-dataitem li:nth-child(1),.man-dataitem li:nth-child(2){border-bottom:1px solid #e8e3da;}
+.man-dataitem li>.line{position:absolute;right:0;top:20px;width:0px;height:96px;border-right:1px solid #e8e3da;}
+.man-dataitem li>h3{font-size: 30px;line-height: 1.2;font-weight: normal;}
+.man-dataitem li>h3>sup{font-size: 13px;margin-left:3px;}
+
+.form-group{
+	width: 260px;
+	background: #fff;
+	margin: 0 auto;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 5px 10px;
+}
+.form-group>p{
+	border-bottom: 1px solid #dfdfdf;
+	position: relative;
+}
+.form-group>p:last-child {
+	border: 0 none;
+}
+
+i.icon.icon_user{
+	background: url('../images/user_icon.png') 0 0 no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+i.icon.icon_mobile{
+	background: url('../images/mobile_icon.png') 0 0 no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+i.icon.icon_mobile_in {
+	background: url('../images/mobile_in_icon.png') 0 0 no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+i.icon.icon_lock{
+	background: url('../images/lock_icon.png') 0 0 no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+i.icon.icon_arrow{
+	background: url('../images/login_arrow.png') 0 0 no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;
+}
+i.icon{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+}
+p.right{
+	text-align: right;
+	width: 280px;
+	margin: 5px auto;
+}
+p.right i.icon{
+	position: static;
+	vertical-align: middle;
+	float: right;
+	margin: 4px 0 0 5px;
+}
+p.right a{
+	display: inline-block;
+	line-height: 30px;
+}
+p.right a span{
+	color: #fff;
+	text-decoration: underline;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animated.hinge{-webkit-animation-duration:2s;animation-duration:2s;}
+@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}
+.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;}
+ @-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+ @keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}
+ .fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;}

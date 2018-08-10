@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>我的成绩</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum- scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="max-age=0"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="Description" content="高考成绩查询"/>
+    <meta name="Keywords" content="高考成绩查询"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/mobi.css')}}"/>
+</head>
+<body class="bg-login">
+<div class="jjr-search">
+    <div class="input-search-customer jjrs-box">
+       <h2 align="center">查询结果</h2>
+    </div>
+</div>
+<div class="tab-yj tab-customer">
+    <div class="tab-yf-box">
+        {% if score %}
+            <table class="table-customer">
+                <thead>
+                <tr>
+                    <th width="20%">姓名</th>
+                    <th width="10%">语文</th>
+                    <th width="10%">数学</th>
+                    <th width="10%">综合</th>
+                    <th width="10%">外语</th>
+                    <th width="20%">民族语文</th>
+                    <th width="10%">总分</th>
+                </tr>
+                </thead>
+                <tbody id="J_teamSearchItem">
+                <tr data-href="#">
+                  {% for value in score %}
+                    <td >{{ value }}</td>
+                  {% endfor %}
+                </tr>
+                </tbody>
+            </table>
+        {% else %}
+            <div style="text-align:center;color:red">没有查询到成绩，请输入正确的考生信息</div>
+        {% endif%}
+    </div>
+</div>
+
+<footer class="foot">
+    Powered by <a href="http://www.mingrisoft.com" style="color:#008ce7">明日科技</a>
+</footer>
+<div class="space-60"></div>
+</body>
+</html>

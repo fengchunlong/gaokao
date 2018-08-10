@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>2018高考成绩查询</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no"/>
+    <meta name="mobileOptimized" content="width"/>
+    <meta name="handheldFriendly" content="true"/>
+    <meta http-equiv="Cache-Control" content="max-age=0"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="Description" content="高考查询吉林教育网指定网址"/>
+    <meta name="Keywords" content="高考查询吉林教育网指定网址"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+</head>
+<body class="bg-login">
+<section class="jjr-main">
+    <h1 class="logo-dkt animated fadeInDown"></h1>
+    <form action="/result" method="post" class="man-login animated fadeInUp">
+        <div class="form-group">
+            <p>
+                <i class="icon icon_mobile"></i>
+                <input type="text" class="man-passwd" name="student_num" id="number" placeholder="请输入你的考生号"/>
+            </p>
+            <p>
+                <i class="icon icon_user"></i>
+                <input type="text" class="man-passwd" name="student_name" id="name" placeholder="请输入你的姓名"/>
+            </p>
+        </div>
+        <p class="right">
+            <a href="#">
+            </a>
+        </p>
+        <p id="btn"><input type="submit" value="查询" class="man-submit"/></p>
+    </form>
+
+</section><!-- /.main -->
+<footer class="footer">
+    Powered by <a href="http://www.mingrisoft.com">明日科技</a>
+</footer><!-- /.foot -->
+</body>
+</html>
